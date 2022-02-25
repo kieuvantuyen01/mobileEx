@@ -17,3 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ##Reference
 - https://docs.google.com/document/d/1BeG72tHCtFMkHVb6POOclTAPuU2FFXpRikChn2ei_BM/edit#heading=h.qe57qb8c4g87
+
+Lab 03:
+![image](https://user-images.githubusercontent.com/56331862/155679963-a54120ad-6df8-480d-babc-0d81b6140bfa.png)
+
