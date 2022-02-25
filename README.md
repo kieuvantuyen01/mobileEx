@@ -1,6 +1,9 @@
 # myapp
+INT3120 20 - Phat trien ung dung di dong - 2022
 
 A new Flutter project.
+Full name: Kieu Van Tuyen
+Student ID: 19021387
 
 ## Getting Started
 
