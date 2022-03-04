@@ -39,11 +39,16 @@ Lab 06:
   ● Các widget hỗ trợ bố trí giao diện - Layout widgets
   ● Các widget quản lý trạng thái - State maintenance widgets
   ● Các widget cơ bản độc lập với nền tảng - Platform independent / basic widgets
+  
+![image](https://user-images.githubusercontent.com/56331862/156720135-86670ef4-6033-4a75-8f98-419758868b71.png)
 
 ![image](https://user-images.githubusercontent.com/56331862/156719467-9800753f-e3fe-45ad-92ae-bbc9031fb847.png)
 Lab07:
 - Tìm hiểu hai loại widget layout chính trong Flutter
   ● Single Child Widgets - Chỉ có một widget con
   ● Multiple Child Widgets - Có nhiều widget con
+  
+  ![image](https://user-images.githubusercontent.com/56331862/156720064-67ecfc8a-8b2a-486e-bc7c-eee8667ff325.png)
+
 
 
