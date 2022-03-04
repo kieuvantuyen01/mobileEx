@@ -28,10 +28,10 @@ Lab 06:
 - Tìm hiểu về cách tạo Widget
 - Cách thức hoạt động của Widget
 - Các loại Widget được hỗ trợ bởi Flutter:
-  ● Các widget giao diện đặc thù theo từng nền tảng - Platform widgets
-  ● Các widget hỗ trợ bố trí giao diện - Layout widgets
-  ● Các widget quản lý trạng thái - State maintenance widgets
-  ● Các widget cơ bản độc lập với nền tảng - Platform independent / basic widgets
+  + Các widget giao diện đặc thù theo từng nền tảng - Platform widgets
+  + Các widget hỗ trợ bố trí giao diện - Layout widgets
+  + Các widget quản lý trạng thái - State maintenance widgets
+  + Các widget cơ bản độc lập với nền tảng - Platform independent / basic widgets
   
 ![image](https://user-images.githubusercontent.com/56331862/156720135-86670ef4-6033-4a75-8f98-419758868b71.png)
 
@@ -39,8 +39,8 @@ Lab 06:
 
 Lab07:
 - Tìm hiểu hai loại widget layout chính trong Flutter
-  ● Single Child Widgets - Chỉ có một widget con
-  ● Multiple Child Widgets - Có nhiều widget con
+  + Single Child Widgets - Chỉ có một widget con
+  + Multiple Child Widgets - Có nhiều widget con
   
  ![image](https://user-images.githubusercontent.com/56331862/156720064-67ecfc8a-8b2a-486e-bc7c-eee8667ff325.png)
  
