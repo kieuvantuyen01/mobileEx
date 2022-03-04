@@ -43,12 +43,16 @@ Lab 06:
 ![image](https://user-images.githubusercontent.com/56331862/156720135-86670ef4-6033-4a75-8f98-419758868b71.png)
 
 ![image](https://user-images.githubusercontent.com/56331862/156719467-9800753f-e3fe-45ad-92ae-bbc9031fb847.png)
+
 Lab07:
 - Tìm hiểu hai loại widget layout chính trong Flutter
   ● Single Child Widgets - Chỉ có một widget con
   ● Multiple Child Widgets - Có nhiều widget con
   
-  ![image](https://user-images.githubusercontent.com/56331862/156720064-67ecfc8a-8b2a-486e-bc7c-eee8667ff325.png)
+ ![image](https://user-images.githubusercontent.com/56331862/156720064-67ecfc8a-8b2a-486e-bc7c-eee8667ff325.png)
+ 
+ ![image](https://user-images.githubusercontent.com/56331862/156721879-54e063d8-f387-44ae-85f4-f32f549975cd.png)
+
 
 
 
