@@ -45,6 +45,14 @@ Lab07:
  ![image](https://user-images.githubusercontent.com/56331862/156720064-67ecfc8a-8b2a-486e-bc7c-eee8667ff325.png)
  
  ![image](https://user-images.githubusercontent.com/56331862/156721879-54e063d8-f387-44ae-85f4-f32f549975cd.png)
+ 
+Lab08:
+
+![image](https://user-images.githubusercontent.com/56331862/156728181-413ba512-a32f-4546-9afc-4dd135acceac.png)
+
+Lab10:
+
+![image](https://user-images.githubusercontent.com/56331862/156728023-14691652-0560-498c-a50c-9f8f0cd88b52.png)
 
 
 
