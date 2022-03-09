@@ -42,7 +42,7 @@ class Product {
             "Floppy Drive",
             "iPhone is the stylist phone ever",
             20,
-            "floppydrive.jpg"
+            "floppy.jpg"
         )
     );
     items.add(
