@@ -1,8 +1,8 @@
 class Product {
-  final int id;
+  final int? id;
   final String name;
   final String description;
-  final int price;
+  final int? price;
   final String image;
   static final columns = ["id", "name", "description", "price", "image"];
 
