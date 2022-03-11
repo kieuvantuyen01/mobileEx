@@ -10,13 +10,49 @@ Ngôn ngữ lập trình: Dart
 
 https://docs.google.com/document/d/1BeG72tHCtFMkHVb6POOclTAPuU2FFXpRikChn2ei_BM/edit#heading=h.qe57qb8c4g87
 
-Lab 03: 
+**Lab 01: Giới thiệu Flutter**
+
+- Flutter là một framework mã nguồn mở cho phép tạo ứng dụng di động với hiệu năng cao, chất lượng tốt hỗ trợ đa nền tảng, phù hợp với phát triển ứng dụng Android và iOS.
+- Tính năng của Flutter:
+Flutter framework có những đặc điểm sau
+  1. Hiện đã và là một react framework
+  2. Sử dụng ngôn ngữ lập trình Dart đơn giản và dễ học
+  3. Phát triển ứng dụng nhanh
+  4. Giao diện người dùng rất đẹp và linh hoạt
+  5. Hỗ trợ rất nhiều widget khác nhau
+  6. Thể hiện cùng một UI trên nhiều nền tảng
+  7. Ứng dụng có hiệu năng cao
+- Điểm mạnh của Flutter:
+  1. Dart có một kho lớn các gói phần mềm cho phép bạn mở rộng khả năng cho ứng dụng của mình
+  2. Các lập trình viên chỉ cần viết một chương trình duy nhất cho tất cả các ứng dụng (Android và iOS). Flutter có thể mở rộng ra các nền tảng khác trong thời gian tới.
+  3. Flutter dễ dàng kiểm thử hơn do tiết kiệm thời gian kiểm thử trên từng nền tảng.
+  4. Nhờ sự đơn giản của mình, Flutter là lựa chọn hàng đầu cho các ứng dụng mới. Nó còn dễ dàng tùy biến và mở rộng lên càng mạnh mẽ hơn
+  5. Với Flutter, lập trình viên có toàn quyền để sắp xếp bố trí điều khiển các widget
+  6. Flutter có bộ công cụ phát triển (developer tools) rất hoàn thiện và đầy đủ, đặc biệt với tính năng hot reload đẩy nhanh tốc độ build ứng dụng đáng kinh ngạc
+  
+**Lab 03: Tạo ứng dụng Flutter đầu tiên**
+
 - Học cách tạo một Flutter Application đầu tiên trên Android Studio
 - Tìm hiểu cơ bản cấu trúc của một project ứng dụng Flutter
 
 ![image](https://user-images.githubusercontent.com/56331862/156717990-1f771ca8-3833-454a-81bd-7d88c56510ee.png)
 
-Lab 05:
+**Lab 04: Kiến trúc ứng dụng Flutter**
+
+- Widgets:
+
+![image](https://user-images.githubusercontent.com/56331862/157831325-1ce23f77-3e83-467c-886c-f1e37b1461d7.png)
+
+- Gestures:
+
+- State:
+
+- Layers:
+
+![image](https://user-images.githubusercontent.com/56331862/157831460-c66ad449-69c8-499b-b842-43d7e7b489ff.png)
+
+**Lab 05: Giới thiệu ngôn ngữ Dart**
+
 - Tìm hiểu về ngôn ngữ Dart qua các phần:
   + Biến và Kiểu dữ liệu
   + Điều khiển và vòng lặp
@@ -38,7 +74,22 @@ Lab 06:
 
 ![image](https://user-images.githubusercontent.com/56331862/156719467-9800753f-e3fe-45ad-92ae-bbc9031fb847.png)
 
-Lab 07:
+**Lab 06: Widget trong Flutter**
+
+- Widget là mọi thứ trong Flutter
+- Tạo Widget
+
+![image](https://user-images.githubusercontent.com/56331862/157831665-e1765488-2c91-4d7b-a643-8885f89e36fd.png)
+
+- Tổng quan về các loại Widget trong Flutter
+Trong Flutter tất các widget được phân loại dựa trên chức năng thành 4 nhóm sau:
+  ● Các widget giao diện đặc thù theo từng nền tảng - Platform widgets
+  ● Các widget hỗ trợ bố trí giao diện - Layout widgets
+  ● Các widget quản lý trạng thái - State maintenance widgets
+  ● Các widget cơ bản độc lập với nền tảng - Platform independent / basic widgets
+
+**Lab 07: Layout trong Flutter**
+
 - Tìm hiểu hai loại widget layout chính trong Flutter
   + Single Child Widgets - Chỉ có một widget con
   + Multiple Child Widgets - Có nhiều widget con
@@ -47,7 +98,7 @@ Lab 07:
  
  ![image](https://user-images.githubusercontent.com/56331862/156721879-54e063d8-f387-44ae-85f4-f32f549975cd.png)
  
-Lab 08:
+**Lab 08: Gesture trong Flutter**
 
 - Tìm hiểu một số cử chỉ được sử dụng rộng rãi:
   ● Tap − Chạm vào bề mặt thiết bị bằng đầu ngón tay trong thời gian ngắn sau đỏ thả ngón     tay ra ngay
@@ -172,26 +223,90 @@ Lab 15:
   
 ![224c12bb15a1daff83b01](https://user-images.githubusercontent.com/56331862/157823038-e2bea9ba-0b79-4d51-b6ba-d40fba957dcf.jpg)
 
-Lab18:
+**Lab18: Khái niệm về Database**
 
+  Flutter cung cấp 2 gói nâng cao để làm việc với database(cơ sở dữ liệu):
+  1. sqflite - Sử dụng để truy vấn vào SQLlite database
+  2. firebase_database : Sử dụng để truy vấn và vận dụng đám mây lưu trữ NoSQL database từ
+  Google.
+  
 ![224c12bb15a1daff83b01](https://user-images.githubusercontent.com/56331862/157823177-ce09d745-93c3-4d74-a8c6-5565ffa9e5c9.jpg)
 
-Lab 19:
+**Lab 19: Chuyển đổi ngôn ngữ**
 
+ - Để ứng dụng làm việc với nhiều ngôn ngữ, đầu tiên nên tìm ngôn ngữ hiện tại của hệ thống mà ứng dụng đang chạy và sau đó hiển thị nội dung ở vị trí cụ thể và quy trình này được gọi là Localization Flutter framework cung cấp 3 lớp localization và các lớp tiện ích có nguồn gốc từ các lớp dựa trên localize
+- Các lớp cơ sở như sau :
+  + Locale - là lớp được sử dụng để nhận diện ngôn ngữ người sử dụng
+  + Localizations - là widget chung được sử dụng để set Locale và nguồn localized của lớp con
+  + LocalizationsDelegate<T> - LocalizationsDelegate<T> là lớp factory thông qua widget Localizations được tải. Nó có 3 phương thức over-ridable như sau :
+  * isSupported - Chấp nhận một miền - và trả về liệu miền đó có được hỗ trợ hay không?
+  * load - Chấp nhận ngôn ngữ được chọn và bắt đầu tải các nguồn dữ liệu của ngôn ngữ đó
+  * shouldReload - Liệu có nên tải lại CustomLocalizations là cần thiết khi widget Localizations được rebuild(giống như việc reset lại trang)
+  
 ![19](https://user-images.githubusercontent.com/56331862/157824188-66a49bdb-73bf-4bbf-99e4-1074b0814e61.jpg)
 
-Lab 20:
+**Lab 20: Kiểm thử**
 
+- Dart và Flutter framework cung cấp gói mở rộng để hỗ trợ trong việc testing tự động của ứng dụng. Một số dạng:
+  + Unit Testing
+  + Widget Testing
+  + Integration Testing
+  + Widget Testing
+- Các bước thực hiện
+Widget Testing thực hiện 3 bước khác biệt như sau :
+  - Render widget trong môi trường testing
+  - WidgetTester là lớp cung cấp bởi Flutter testing framework để build và render widget. Phương thức pumpWidget của lớp WidgetTester chấp nhận bất kỳ Widget và render nó trong môi trường testing
+- Flutter framework cung cấp nhiều tính năng để tìm đến widget render trong môi trường testing và gọi chung là Finders.
+  1. find.text để tìm widget mà chứa đoạn text cụ thể - find.text('Hello')
+  2. find.byKey để tìm widget chứa các key cụ thể - find.byKey('home')
+  3. find.byWidget để tìm wiget theo biến thể của nó -find.byWidget (homeWidget)
+- Đảm bảo các widget làm việc như mong đợi
+- Flutter framework cung cấp nhiều tính năng để phù hợp widget với widget dự kiến và gọi là Matchers
+  + findsOneWidget - Xác minh widget duy nhất được tìm thấy
+  + findsNothing - Xác minh không wiget nào được tìm thấy
+  + findsWidgets − Xác minh nhiều hơn một wiget được tìm thấy
+  + findsNWidgets - Xác minh N widget tìm thấy
+  
 ![4cef48cf4fd5808bd9c412](https://user-images.githubusercontent.com/56331862/157823403-4981cf78-c81e-4b4d-a005-8d72dea0ba33.jpg)
 
+**Lab 21: Xuất ứng dụng trong Flutter**
 
-Lab 21:
+- Android:
+  - Thay đổi tên ứng dụng bằng cách truy cập vào lệnh android:label trong file manifest.
+AndroidManifest.xml được đặt trong <app dir>.android/app/src/main. Trong file này chứa toàn bộ chi tiết về ứng dụng Android. Chúng ta có thể đặt tên ứng dụng thông qua android:label
+- Thay đổi icon của ứng dụng bằng android:icon trong file manifest
+- Cách xuất ứng dụng sang file APK bằng lệnh sau :
+  cd /path/to/my/application
+  flutter build apk
+- Cách cài đặt file APK trực tiếp trên thiết bị di động:
+  flutter install
+- Đẩy ứng dụng lên Google PlayStore bằng cách tạo appbundle và đẩy nó lên bằng lệnh sau :
+  flutter build appbundle 
+  
 
 ![4cef48cf4fd5808bd9c412](https://user-images.githubusercontent.com/56331862/157823414-e9d23757-c049-4564-900e-850cf81d8e64.jpg)
 
+**Lab 22: Công cụ phát triển**
+  
+Widget Sets
+Phát triển ứng dụng Flutter với Visual Studio Code
+Dart DevTools
 
-Lab 23:
+**Lab 23: Viết ứng dụng hoàn chỉnh**
 
+- Ứng dụng hoàn chỉnh: expense_calculator. 
+- Mục đích của ứng dụng: lưu trữ thông tin chi phí. 
+- Các tính năn cần hoàn thành:
+  1. Danh sách chi phí
+  2. Tạo mẫu để nhập chi phí mới
+  3. Tính năng chỉnh sửa/xóa
+  4. Tính tổng chi phí trong bất kì trường hợp nào
+- Sử dụng một vào tính năng tiên tiến của flutter framework:
+  1. Sử dụng listview để hiển thị ra danh sách chi phí
+  2. Lập trình mẫu
+  3. Sử dụng SQLite để lưu trữ chi phí
+  4. Sử dụng quản lý vùng nhớ scoped_model để đơn giản hoá việc lập trình
+  
 ![231](https://user-images.githubusercontent.com/56331862/157824254-a870d8b9-4a52-45c2-b707-8809af1cee2c.jpg)
 
 ![232](https://user-images.githubusercontent.com/56331862/157824268-3230a040-063a-4568-a8b8-db19aa826981.jpg)
