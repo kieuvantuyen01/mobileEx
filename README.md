@@ -49,30 +49,78 @@ Lab 07:
  
 Lab 08:
 
+- Tìm hiểu một số cử chỉ được sử dụng rộng rãi:
+  ● Tap − Chạm vào bề mặt thiết bị bằng đầu ngón tay trong thời gian ngắn sau đỏ thả ngón     tay ra ngay
+  ● Double Tap − Tap 2 lần trong thời gian ngắn
+  ● Drag − Chạm vào bề mặt của thiết bị bằng đầu ngón tay và sau đó di chuyển đầu ngón tay    một cách ổn định và cuối cùng thả ngón tay ra.
+  ● Flick − Tương tự như drag nhưng thực hiện nhanh hơn.
+  ● Pinch − Chụm bề mặt của thiết bị bằng hai ngón tay
+  ● Spread/Zoom − Ngược lại với Pinch.
+  ● Panning − Chạm vào bề mặt của thiết bị bằng đầu ngón tay và di chuyển nó theo bất kỳ      hướng nào mà không nhả đầu ngón tay
+- Tiện ích GestureDetector duy nhất để xử lý tất cả các loại cử chỉ, nó sẽ bắt các cử chỉ và gửi nhiều sự kiện dựa trên cử chỉ đó
+
 ![cd051a381d22d27c8b3310](https://user-images.githubusercontent.com/56331862/157822712-37bc644e-855c-43b0-9f4a-e324a3e2bbfd.jpg)
 
 ![f8b46a8d6d97a2c9fb8611](https://user-images.githubusercontent.com/56331862/157822723-071ab532-6b39-43f2-a9b6-9267209fc6d1.jpg)
 
+**Lab 09: Quản lý trạng thái State trong Flutter**
 
-Lab 10:
+- Quản lý state (trạng thái) của ứng dụng là một trong những bước quan trọng và cần thiết trong vòng đời của một ứng dụng.
+- Việc quản lý trạng thái có thể được chia làm hai loại dựa vào thời gian tồn tại của trạng thái đó trong ứng dụng:
+  ● Ephemeral (ngắn hạn)− Kéo dài trong vài giây như trạng thái của hiệu ứng (animation) hoặc một trang đơn. Flutter hỗ trợ quản lý trạng thái loại này thông qua StatefulWidget.
+  ● App state (trạng thái ứng dụng) − Kéo dài trong toàn bộ ứng dụng, Flutter hỗ trợ quản lý trạng thái loại này thông qua coped_model
 
+**Lab 10: Statefulwidget trong Flutter**
+- Tìm hiểu quản lý trạng thái ngắn hạn với Statefulwidget
+- Nó cung cấp tùy chọn cho widget để tạo ra các trạng thái, việc khởi tạo trạng thái ban đầu của widget được thực hiện qua hàm createState và hàm setState dùng để thay đổi trạng thái khi cần.
+- 
 ![image](https://user-images.githubusercontent.com/56331862/156728023-14691652-0560-498c-a50c-9f8f0cd88b52.png)
 
-Lab 11:
+**Lab 11: ScopedModel trong Flutter**
 
+- Tìm hiểu cách quản lý trạng thái trong ứng dụng bằng ScopedModel
+- Nó cung cấp 3 class chính cho phép quản lý trạng thái của ứng dụng một cách mạnh mẽ:
+  + Model
+  + ScopedModel
+  + Single Model
+  + Multiple Model
+- ScopedModelDescendant là một widget, nó lấy Data Model từ lớp cha và build lại UI bất kí khi nào Data Model thay đổi.
+ScopedModelDescendant có 2 thuộc tính là builder và child. Child là phần UI không bị thay đổi và sẽ được chuyển cho hàm builder. Hàm buider sẽ nhận 3 đối số:
+  1. Content :ScopedModelDescendant chuyển sang context của ứng dụng
+  2. Child : Một phần của UI và không thay đổi dựa trên Data Model
+  3. Model : Dưới đây là ví dụ tường minh
+  
 ![02e8b029b733786d21229](https://user-images.githubusercontent.com/56331862/157822464-b22d06eb-5c2d-4254-a29f-b449cf49f58f.jpg)
 
-Lab 12:
+**Lab 12: Navigator và Routing**
 
+- Việc điều hướng từ một Full-screen ( page/screen ) để làm một công việc xác định nào đó ( chuyển sang một Full-screen khác) sử dụng Navigator widget thì được gọi là Routing. 
+- Flutter cung cấp cho chúng ta lớp Routing cơ bản - MaterialPageRoute với hai phương thức Navigator.push và Navigator.pop.
 
 ![31ecea37ed2d22737b3c8](https://user-images.githubusercontent.com/56331862/157822819-6180df4f-eceb-4ca9-9958-c8ad480f1739.jpg)
 
 
-Lab 13:
+**Lab 13: Animation**
+
+- Là một lớp trừu tượng và việc xử lý khá phức tạp.
+- Là quá trình thể hiện một loạt các hình ảnh trong một khoảng thời gian.
+1. Animation có 2 giá trị đích : đầu và cuối. Ví dụ để hiệu ứng một widget biến mất thì giá trị đầu của nó có opacity( độ đục ) tuyệt đối và giá trị cuối có opacity bằng 0
+2. Giá trị trung gian có thể là tuyến tính( đường thẳng) hoặc không tuyến tính (đường cong) và nó có thể được cấu hình. Với mỗi cấu hình khác nhau sẽ cho ra một kiểu animation khác nhau.
+3. Thời gian khi chạy animation có tác động đến tốc độ (nhanh hay chậm) của hiệu ứng
+4. Trong flutter, hệ thống animation không có bất kì animation cụ thể nào cả. Thay vào đó nó cung cấp duy nhất giá trị yêu cầu cho tất cả các frame để render hình ảnh
 
 ![207de5a1e2bb2de574aa7](https://user-images.githubusercontent.com/56331862/157822761-6d5f5f3f-afdf-4da2-99a1-81b7284736a0.jpg)
 
-Lab 14:
+**Lab 14: Code với native Android**
+
+- Để truy cập vào mã cụ thể của nền tảng thông qua giao thức đơn giản là messaging.Flutter code, Client, mã nền tảng và Host liên kết với một thông báo chung gọi là Message
+Channel. 
+- Client sẽ gửi thông báo đến Host thông qua Message Channel. Host sẽ lắng nghe từ Message
+Channel, nhận thông báo và xử lý các hàm cần thiết và cuối cùng trả kết quả về cho Clients thông qua Message Channel.
+
+Dưới đây là kiến trúc platform specific code được hiển thị thông qua sơ đồ khối :
+
+![image](https://user-images.githubusercontent.com/56331862/157826418-612f3bce-8f6c-46c5-9b87-28162d5480b5.png)
 
 ![9f881c611b7bd4258d6a6](https://user-images.githubusercontent.com/56331862/157822861-ee8c53f3-4cb4-4584-9968-aff6dc06a721.jpg)
 
