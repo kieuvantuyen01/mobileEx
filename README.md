@@ -122,6 +122,8 @@ Dưới đây là kiến trúc platform specific code được hiển thị thô
 
 ![image](https://user-images.githubusercontent.com/56331862/157826418-612f3bce-8f6c-46c5-9b87-28162d5480b5.png)
 
+Giao thức thông báo sử dụng mã thông báo tiêu chuẩn( lớp StandardMessageCodec), được hỗ trợ tuần tự nhị phân của JSON - như các giá trị kiểu số, chuỗi, boolean,..serialization và de serialization hoạt động rõ ràng giữa Clients và Host.
+
 ![9f881c611b7bd4258d6a6](https://user-images.githubusercontent.com/56331862/157822861-ee8c53f3-4cb4-4584-9968-aff6dc06a721.jpg)
 
 ![lab14](https://user-images.githubusercontent.com/56331862/157823466-359776f0-73bc-4d02-9c3b-e55d3e86d318.jpg)
@@ -136,15 +138,39 @@ Lab 15:
 ![7fc0a333a4296b7732382](https://user-images.githubusercontent.com/56331862/157822923-84465e59-f9ef-40d5-9fe6-ee2369fa64a4.jpg)
 
 
-Lab 16:
+**Lab 16: Giới thiệu về package**
+- Dart Package là một thư viện hay mô hình đơn giản có thể chia sẻ. 
+- Cấu trúc chung của Package ( ví dụ về package) dưới đây :
+  - lib/src/* : tệp Dart ở dạng priavte
+  - lib/my_demo_package.dart : phần code chính của Dart, có thể thêm một vài ứng dụng
+  import 'package:my_demo_package/my_demo_package.dart'
+  - Một vài tệp ở dạng private có thể được xuất sang tệp chính (my_demo_package.dart) :
+  export src/my_private_code.dart
+  - lib/* : Ta có thể truy cập vào bất kì tệp nào bên trong thư mục :import 'package:my_demo_package/custom_folder/custom_file.dart'
+  - pubspec.yaml : Được hiểu là trình quản lý thư mục của Package
+- Để tích hợp được các gói vào dự án thì ta cần phải có file pubspec.yaml
+- Các kiểu Package :
+  - Dart Package
+  - Flutter package
+  - Flutter plugin
 
 ![224c12bb15a1daff83b01](https://user-images.githubusercontent.com/56331862/157822964-c48f7b47-5d10-42cd-a9c9-b4fc98817c43.jpg)
 
-
-Lab 17:
-
+**Lab 17: REST API**
+- Http là một thư viện Future-based sử dụng tính năng await và async. Nó cung cấp phương thức cấp cao và đơn giản để phát triển REST trên ứng dụng di động.
+- Gói http cung cấp các lớp cấp cao và http request từ web
+  - Lớp http cung cấp chức năng để làm việc với tất cả các kiểu dữ liệu HTTP được request
+  - Phương thức http có sử dụng url, và bổ sung thông tin thông qua Dart Map ( post dữ liệu, bổ sung tiêu đề, ...). Nó yêu cầu lên máy chủ và thu thập phản hồi với async/await. 
+- Một vài phương thức chính :
+  - read : gửi yêu cầu lên sever thông qua phương thức GET và trả về Future<String>
+  - get : gửi yêu cầu lên sever thông qua phương thức GET và trả về Future<Response>. Response là lớp giữ lại các thông tin phản hồi
+  - post : gửi yêu cầu lên sever thông qua phương thức POST bằng việc đưa giá trị lên sever và phản hồi Future<Response>
+  - put : gửi yêu cầu lên sever thông qua phương thức PUT và trả về phản hồi như Future<Response>
+  - head : gửi yêu cầu lên sever thông qua phương thức HEAD và trả về phản hồi như Future<Response>
+  - delete : gửi yêu cầu lên sever thông qua phương thức DELETE và trả về phản hồi như Future<Response>
+- Http cũng cung cấp nhiều lớp standard HTTP client. client có nhiệm vụ hỗ trợ kết nối. Nó sẽ hữu ích khi có rất nhiều request lên sever.
+  
 ![224c12bb15a1daff83b01](https://user-images.githubusercontent.com/56331862/157823038-e2bea9ba-0b79-4d51-b6ba-d40fba957dcf.jpg)
-
 
 Lab18:
 
