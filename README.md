@@ -3,7 +3,8 @@
 INT3120 20 - Phát triển ứng dụng di động - 2022
 
 Full name: Kieu Van Tuyen. Student ID: 19021387
-Ngôn ngữ lập trình: Dart
++ Framework: Flutter
++ Ngôn ngữ lập trình: Dart
 
 
 ##Reference
